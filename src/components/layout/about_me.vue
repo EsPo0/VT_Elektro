@@ -16,10 +16,6 @@
         <li><a href="https://www.linkedin.com/in/vadims-teli%C4%8Dens-824530329/overlay/Education/1018205369/treasury?profileId=ACoAAFLWg5wBSTINsX7GkosccBRA3bdBsgltRg0">Elektrotehniskos mērījumos</a></li>
         <li><a href="https://www.linkedin.com/in/vadims-teli%C4%8Dens-824530329/overlay/Education/1197850409/treasury?profileId=ACoAAFLWg5wBSTINsX7GkosccBRA3bdBsgltRg0">Elektrospeciālists</a></li>
         <li><a href="https://www.linkedin.com/in/vadims-teli%C4%8Dens-824530329/overlay/Education/1197843741/treasury?profileId=ACoAAFLWg5wBSTINsX7GkosccBRA3bdBsgltRg0">Saules paneļu montāžu un ekspluatāciju</a></li>
-
-
-
-
       </ul>
     </div>
     <div class="about-image">
@@ -40,15 +36,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 32px;
 }
 
 .about-content {
-  flex: none;
-  width: 704px;
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
-} 
+}
 
 .about-title {
   font-family: 'Inter', sans-serif;
@@ -97,8 +94,8 @@
 }
 
 .about-image {
-  flex: none;
-  width: 703px;
+  flex: 1;
+  min-width: 0;
 }
 
 .about-image img {
