@@ -1,7 +1,7 @@
 <template>
   <section id="sakums" class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Sertificēta elektriķa pakalpojumi</h1>
+      <h1 class="hero-title">Pašnodarbināta <u>sertificēta elektriķa</u> pakalpojumi</h1>
       <p class="hero-subtitle">Droša elektroinstalācija jūsu mājām un biznesam - no diagnostikas un mērījumiem līdz pilnīgai elektroinstalācijas nodošanai ekspluatācijā.</p>
       <ButtonPrimary>Saņemt bezmaksas konsultāciju</ButtonPrimary>
     </div>

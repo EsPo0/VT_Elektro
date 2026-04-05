@@ -2,9 +2,7 @@
   <footer class="footer">
     <p class="footer-heading">Nepieciešams sertificēts elektriķis? Sazinies ar mani!</p>
     <a href="tel:+37128347069" class="footer-phone">+371 28347069</a>
-    <a href="https://www.linkedin.com/in/vadims-teli%C4%8Dens-824530329/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-      <img src="@/assets/linkedin.svg" alt="LinkedIn" class="linkedin-icon" />
-    </a>
+    <a href="tel:+37126874896" class="footer-phone">+371 26874896</a>
     <p class="footer-copy">VT Solutions ©2025. All rights reserved.</p>
   </footer>
 </template>

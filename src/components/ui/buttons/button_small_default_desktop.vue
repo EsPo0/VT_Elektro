@@ -1,6 +1,6 @@
 <template>
   <button class="btn-primary">
-    <slot>+371 28347069</slot>
+    <a href="tel:+37128347069">+371 28347069</a>
   </button>
 </template>
 
@@ -8,6 +8,24 @@
 </script>
 
 <style scoped>
+
+a {
+  color:#000000
+}
+
+a:link {
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      transform: scale(1.05);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: none;
+}
+
 .btn-primary {
   background: #F6BE1F;
   color: #000000;

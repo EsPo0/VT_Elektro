@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "bunx --bun vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -38,7 +38,7 @@
     "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.37.0",
     "oxlint": "~1.51.0",
-    "typescript": "~5.9.3",
+    "typescript": "^6.0.2",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.7",
     "vitest": "^4.0.18",
