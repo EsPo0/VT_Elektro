@@ -1,7 +1,5 @@
 <template>
-  <button class="btn-primary">
-    <a href="tel:+37128347069">+371 28347069</a>
-  </button>
+  <a href="tel:+37128347069" class="btn-primary"><slot /></a>
 </template>
 
 <script setup lang="ts">
@@ -27,6 +25,8 @@ a:link {
 }
 
 .btn-primary {
+  justify-content: center;
+  text-decoration: none;
   background: #F6BE1F;
   color: #000000;
   padding: 12px;
