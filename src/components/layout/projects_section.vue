@@ -6,7 +6,6 @@
     </div>
   </section>
 </template>
-
 <script setup lang="ts">
 import img1 from '@/assets/project_1.jpeg'
 import img2 from '@/assets/project_2.jpeg'
@@ -16,10 +15,8 @@ import img5 from '@/assets/project_5.jpeg'
 import img6 from '@/assets/project_6.jpeg'
 import img7 from '@/assets/project_7.jpeg'
 import img8 from '@/assets/project_8.jpeg'
-
 const images = [img1, img2, img3, img4, img5, img6, img7, img8]
 </script>
-
 <style scoped>
 .projects {
   width: 100%;
@@ -27,7 +24,6 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8]
   padding: 64px 40px;
   box-sizing: border-box;
 }
-
 .projects-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -36,17 +32,64 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8]
   color: #000000;
   margin-bottom: 32px;
 }
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
-
 .project-image {
   width: 100%;
   height: 600px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 40px 0;
+  }
+
+  .projects-title {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+
+  .projects-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,0.7) 0,
+      rgba(0,0,0,1) 20%,
+      rgba(0,0,0,1) 80%,
+      rgba(0,0,0,0.7) 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,0.7) 0,
+      rgba(0,0,0,1) 20%,
+      rgba(0,0,0,1) 80%,
+      rgba(0,0,0,0.7) 100%
+    );
+  }
+  .projects-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-image {
+    flex: 0 0 222px;
+    width: 222px;
+    height: 260px;
+    scroll-snap-align: center;
+  }
 }
 </style>

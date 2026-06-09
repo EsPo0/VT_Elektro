@@ -161,4 +161,38 @@ const services = [
   flex-shrink: 0;
   margin-top: 4px;
 }
+
+@media (max-width: 768px) {
+  .services {
+    padding: 40px 18px;
+  }
+
+  .services-title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-header {
+    align-items: flex-start;
+  }
+  .service-circle {
+    width: 48px;
+    height: 48px;
+    left: -16px;
+    top: -10px;
+    bottom: auto;
+  }
+
+  .bolt-icon {
+    width: 8px;
+    height: 12px;
+    margin-top: 6px;
+  }
+}
 </style>

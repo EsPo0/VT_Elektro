@@ -23,10 +23,8 @@
     </div>
   </section>
 </template>
-
 <script setup lang="ts">
 </script>
-
 <style scoped>
 .about {
   width: 100%;
@@ -38,7 +36,6 @@
   align-items: flex-start;
   gap: 32px;
 }
-
 .about-content {
   flex: 1;
   min-width: 0;
@@ -46,7 +43,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
 .about-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -54,7 +50,6 @@
   line-height: 38px;
   color: #000000;
 }
-
 .about-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -62,7 +57,6 @@
   line-height: 24px;
   color: #000000;
 }
-
 .certs-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -71,37 +65,54 @@
   color: #000000;
   margin-top: 16px;
 }
-
 .certs-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .certs-list a {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #171792;
-
   text-decoration: none;
 }
-
 .certs-list a:hover {
   text-decoration: underline;
 }
-
 .about-image {
   flex: 1;
   min-width: 0;
 }
-
 .about-image img {
   width: 100%;
   height: 489px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .about-content {
+    gap: 12px;
+  }
+
+  .about-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .about-image img {
+    height: auto;
+    aspect-ratio: 361 / 273;
+  }
 }
 </style>
