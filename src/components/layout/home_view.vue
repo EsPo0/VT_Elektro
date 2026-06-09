@@ -3,11 +3,11 @@
     <div class="hero-content">
       <h1 class="hero-title desktop-only">Pašnodarbināta <u>sertificēta elektriķa</u> pakalpojumi</h1>
       <p class="hero-subtitle desktop-only">Droša elektroinstalācija jūsu mājām un biznesam - no diagnostikas un mērījumiem līdz pilnīgai elektroinstalācijas nodošanai ekspluatācijā.</p>
-      <ButtonPrimary class="desktop-only">Saņemt bezmaksas konsultāciju</ButtonPrimary>
+      <ButtonPrimary class="desktop-only">Sazinies ar mani</ButtonPrimary>
 
       <h1 class="hero-title mobile-only">Sertificēta elektriķa pakalpojumi</h1>
       <p class="hero-subtitle mobile-only">Droša elektroinstalācija jūsu mājām un biznesam - no diagnostikas līdz pilnīgai montāžai</p>
-      <button class="hero-cta-mobile mobile-only">Saņemt bezmaksas konsultāciju</button>
+      <button class="hero-cta-mobile mobile-only">Sazinies ar mani</button>
     </div>
   </section>
   <ServicesSection id="pakalpojumi"/>
