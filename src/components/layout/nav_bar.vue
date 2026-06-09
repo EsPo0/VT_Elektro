@@ -201,8 +201,8 @@ onUnmounted(() => {
 .overlay-links a {
   font-family: Inter, sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 22px;
+  line-height: 32px;
   color: #000000;
   text-align: center;
   text-decoration: none;

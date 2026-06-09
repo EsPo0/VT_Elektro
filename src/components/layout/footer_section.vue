@@ -7,9 +7,9 @@
         <img src="@/assets/phone.svg" alt="" class="contact-icon" />
         <span>+371 28347069</span>
       </a>
-      <a href="mailto:vadims@telicens.com" class="contact-row">
+      <a href="mailto:elecsolab@yahoo.com" class="contact-row">
         <img src="@/assets/mail.svg" alt="" class="contact-icon" />
-        <span>vadims@telicens.com</span>
+        <span>elecsolab@yahoo.com</span>
       </a>
       <a
         href="https://www.linkedin.com/in/vadims-teli%C4%8Dens-824530329/"
