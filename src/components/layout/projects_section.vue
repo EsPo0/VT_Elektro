@@ -2,11 +2,26 @@
   <section class="projects">
     <h2 class="projects-title">Projekti</h2>
     <div class="projects-grid">
-      <img v-for="i in 8" :key="i" :src="images[i - 1]" :alt="'Projekts ' + i" class="project-image" />
+      <img @click="openLightbox(i - 1)" v-for="i in 8" :key="i" :src="images[i - 1]" :alt="'Projekts ' + i" class="project-image" />
     </div>
+    <Transition name="lightbox-fade">
+      <div v-if="activeIndex !== null" class="lightbox" @click="closeLightbox">
+        <button class="lightbox-close" aria-label="Aizvērt" @click="closeLightbox">
+          <span></span>
+          <span></span>
+        </button>
+        <img
+          :src="images[activeIndex]"
+          :alt="'Projekts ' + (activeIndex + 1)"
+          class="lightbox-image"
+          @click.stop
+        />
+      </div>
+    </Transition>
   </section>
 </template>
 <script setup lang="ts">
+import { ref, watch, onUnmounted } from 'vue'
 import img1 from '@/assets/project_1.jpeg'
 import img2 from '@/assets/project_2.jpeg'
 import img3 from '@/assets/project_3.jpeg'
@@ -16,6 +31,14 @@ import img6 from '@/assets/project_6.jpeg'
 import img7 from '@/assets/project_7.jpeg'
 import img8 from '@/assets/project_8.jpeg'
 const images = [img1, img2, img3, img4, img5, img6, img7, img8]
+const activeIndex = ref<number | null>(null)
+const openLightbox = (i: number) => { activeIndex.value = i }
+const closeLightbox = () => { activeIndex.value = null }
+
+watch(activeIndex, (val) => {
+  document.body.style.overflow = val !== null ? 'hidden' : ''
+})
+onUnmounted(() => { document.body.style.overflow = '' })
 </script>
 <style scoped>
 .projects {
@@ -42,6 +65,58 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8]
   height: 600px;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  cursor: zoom-out;
+}
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.lightbox-close span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.lightbox-close span:first-child { transform: rotate(45deg); }
+.lightbox-close span:last-child { transform: rotate(-45deg); }
+.lightbox-fade-enter-active,
+.lightbox-fade-leave-active {
+  transition: opacity 200ms ease;
+}
+.lightbox-fade-enter-from,
+.lightbox-fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 768px) {
