@@ -85,11 +85,18 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8]
     display: none;
   }
 
+  .projects-grid::before,
+  .projects-grid::after {
+    content: '';
+    flex: 0 0 calc(50vw - 111px - 8px);
+  }
+
   .project-image {
     flex: 0 0 222px;
     width: 222px;
     height: 260px;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 }
 </style>
