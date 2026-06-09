@@ -3,11 +3,10 @@
     <div class="hero-content">
       <h1 class="hero-title desktop-only">Pašnodarbināta <u>sertificēta elektriķa</u> pakalpojumi</h1>
       <p class="hero-subtitle desktop-only">Droša elektroinstalācija jūsu mājām un biznesam - no diagnostikas un mērījumiem līdz pilnīgai elektroinstalācijas nodošanai ekspluatācijā.</p>
-      <ButtonPrimary class="desktop-only">Sazinies ar mani</ButtonPrimary>
-
+      <div class="desktop-only"><ButtonPrimary>Sazinies ar mani</ButtonPrimary></div>
       <h1 class="hero-title mobile-only">Sertificēta elektriķa pakalpojumi</h1>
       <p class="hero-subtitle mobile-only">Droša elektroinstalācija jūsu mājām un biznesam - no diagnostikas līdz pilnīgai montāžai</p>
-      <button class="hero-cta-mobile mobile-only">Sazinies ar mani</button>
+      <a href="tel:+37128347069" class="hero-cta-mobile mobile-only">Sazinies ar mani</a>
     </div>
   </section>
   <ServicesSection id="pakalpojumi"/>
@@ -31,7 +30,7 @@ import FooterSection from '@/components/layout/footer_section.vue'
   background: url('@/assets/homepage.jpg') center / cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 100px 18px;
   box-sizing: border-box;
 }
 .hero-content {
