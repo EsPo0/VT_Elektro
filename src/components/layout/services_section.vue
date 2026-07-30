@@ -30,30 +30,30 @@ const services = [
   {
     title: 'Mērījumi elektrotīklā',
     items: [
-      'Izolācijas pretestības mērījumi;',
-      'Zemējuma pretestības mērījumi;',
-      '"Fāzes-nulle" cilpas mērījumi;',
-      'Kontaktu pretestības nepārtrauktības mērījumi;',
-      'Termogrāfiskā analīze;',
+      'Izolācijas pretestības mērījumi',
+      'Zemējuma pretestības mērījumi',
+      '"Fāzes-nulle" cilpas mērījumi',
+      'Kontaktu pretestības nepārtrauktības mērījumi',
+      'Termogrāfiskā analīze',
       'Mērījumu protokola sastādīšana saskaņā ar LR MK238 (tostarp shēmu sastādīšana elektrosadales skapjiem un iekšējiem tīkliem)'
     ]
   },
   {
     title: 'Elektrosadales skapju uzstādīšana un apkopes',
     items: [
-      'Elektrosadales skapju shēmu izstrāde, aprēķināšana un sastādīšana;',
-      'Elektrosadales skapju uzstādīšana un montāža;',
-      'Montāža: automāti, noplūdes aizsardzība, diferenciālie automāti, sprieguma releji, parsprieguma aizsardzība un citi aizsardzības ierīces;',
+      'Elektrosadales skapju shēmu izstrāde, aprēķināšana un sastādīšana',
+      'Elektrosadales skapju uzstādīšana un montāža',
+      'Montāža: automāti, noplūdes aizsardzība, diferenciālie automāti, sprieguma releji, parsprieguma aizsardzība un citi aizsardzības ierīces',
       'Vecā elektrosadales skapju modernizācija un nomaiņa (ieskaitot aprēķinu un plānošanu)'
     ]
   },
   {
     title: 'Elektroinstalāciju montāža un nomaiņa',
     items: [
-      'Iekšējo elektrotīklu plānošana/aprēķināšan a privātajā sektorā;',
-      'Pilnīga vai daļēja vadu nomaiņa dzīvokļos, mājās, birojos, ražotnēs;',
-      'Jaunu elektrovadu ierīkošana jaunbūvēs vai remontā;',
-      'Slēpto un atklāto vadu uzstādīšana (tostarp: vintage, retro instalācija);',
+      'Iekšējo elektrotīklu plānošana/aprēķināšan a privātajā sektorā',
+      'Pilnīga vai daļēja vadu nomaiņa dzīvokļos, mājās, birojos, ražotnēs',
+      'Jaunu elektrovadu ierīkošana jaunbūvēs vai remontā',
+      'Slēpto un atklāto vadu uzstādīšana (tostarp: vintage, retro instalācija)',
       'Sadzīves tehnikas un cita elektriskā aprīkojuma pieslēgšana (tostarp: elektromobiļu uzlādes ierīces privātajā sektorā)'
     ]
   },
@@ -63,18 +63,28 @@ const services = [
       'Zemējuma montāža un zemējuma kontūra mērījumi'
     ]
   },
+    {
+    title: 'EV uzlādes sistēmu integrācija un slodžu aprēķins',
+    items: [
+      'Tīkla audits drošai staciju pieslēgšanai',
+      '⁠Enerģijas balansēšana: Dinamiska jaudas sadale maksimālās slodzes stundās',
+      'Integrācija ar PV sistēmām: Uzlādes sinhronizācija ar saules paneļiem',
+      '⁠Aparatūras aizsardzība: B tipa strāvas noplūdes automātslēdžu (RCD Type B / DC 6mA) un pārsprieguma aizsardzības (SPD) montāža automašīnas un tīkla aizsardzībai',
+      'Dispečerizācija: Staciju pieslēgšana ēkas automātikai un "Viedajai mājai"'
+    ]
+  },
   {
     title: 'Iekšējo elektrotīklu plānošana un aprēķins',
     items: [
-      'Iekšējo elektrotīklu plānošana/aprēķināšana/izstrāde privātmājām un dzīvokļiem;',
-      'Slodzes aprēķins un elektroiekārtu izvēle.'
+      'Iekšējo elektrotīklu plānošana/aprēķināšana/izstrāde privātmājām un dzīvokļiem',
+      'Slodzes aprēķins un elektroiekārtu izvēle'
     ]
   },
   {
     title: 'Konsultācijas par dizainu un plānošanu iekšējos elektrotīklos privātajā sektorā',
     items: [
-      'Elektropiegādes sistēmas izvēle (230V/400V);',
-      'Iekšējās enerģētikas sistēmas plānošana privātajā sektorā;',
+      'Elektropiegādes sistēmas izvēle (230V/400V)',
+      'Iekšējās enerģētikas sistēmas plānošana privātajā sektorā',
       'Iekārtu un apgaismes iekārtu izvēle privātajā sektorā'
     ]
   }
